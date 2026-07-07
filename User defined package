@@ -1,0 +1,46 @@
+package shapes;
+public class Square {
+    public void area(double side) {
+        double area = side * side;
+        System.out.println("Area of Square = " + area);
+    }
+}
+package shapes;
+public class Circle {
+    public void area(double radius) {
+        double area = Math.PI * radius * radius;
+        System.out.println("Area of Circle = " + area);
+    }
+}
+package shapes;
+public class Circle {
+    public void area(double radius) {
+        double area = Math.PI * radius * radius;
+        System.out.println("Area of Circle = " + area);
+    }
+}
+import java.util.Scanner;
+import shapes.Square;
+import shapes.Circle;
+import shapes.Triangle;
+
+public class ShapeDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Square s = new Square();
+        Circle c = new Circle();
+        Triangle t = new Triangle();
+        System.out.print("Enter side of square: ");
+        double side = sc.nextDouble();
+        System.out.print("Enter radius of circle: ");
+        double radius = sc.nextDouble();
+        System.out.print("Enter base of triangle: ");
+        double base = sc.nextDouble();
+        System.out.print("Enter height of triangle: ");
+        double height = sc.nextDouble();
+        s.area(side);
+        c.area(radius);
+        t.area(base, height);
+        sc.close();
+    }
+}
